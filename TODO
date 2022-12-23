@@ -1,0 +1,60 @@
+Você18:39
+https://github.com/rmwesley/TestStream
+Você18:41
+javac Test.java
+java Test
+[B, D]
+2400.0
+{SG=[A, D], LCL=[A, B], CA=[C]}
+Você18:59
+IoC, DI
+public class Main{
+	public static void main(String[] args){
+		Bank franceCapital = Bank.init();
+		franceCapital.addClient("Rebeca");
+		franceCapital.addClient("Eduardo");
+		franceCapital.addClient("Bruno");
+		franceCapital.addClient("Renato");
+		franceCapital.addClient("Lucas");
+
+		franceCapital.getClient(1).deposit(200.0);
+		franceCapital.getClient("Eduardo").deposit(100.0);
+		franceCapital.getClient("Eduardo").withdraw(49.99);
+		System.out.println(franceCapital.getClient("Eduardo").history());
+Irako ANDRIANATOANDRO19:12
+package org.example;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class CalculatriceTest {
+    @Test
+    void shouldAdd() {
+        // GIVEN
+        Calculatrice calculatrice = new Calculatrice();
+        int a = 4;
+        int b = 6;
+        // WHEN
+        int result = calculatrice.add(a, b);
+        // THEN
+        assertEquals(10, result);
+    }
+
+    @Test
+    void shouldMultiply() {
+        // GIVEN
+        Calculatrice calculatrice = ne
+gherkin
+Irako ANDRIANATOANDRO19:21
+Une interface fonctionnelle est une interface qui ne contient qu'une seule méthode abstraite.
+Irako ANDRIANATOANDRO19:28
+https://blog.paumard.org/cours/java/chap07-heritage-interface-interface.html
+https://developpement-informatique.com/article/262/interface-fonctionnelle-et-expressions-lambda-en-java
+Irako ANDRIANATOANDRO19:39
+https://www.oreilly.com/library/view/head-first-java/9781492091646/
+Irako ANDRIANATOANDRO19:41
+https://www.oreilly.com/library/view/head-first-design/9781492077992/
+Você19:47
+Test unitaire (IDE IntellyJ, Maven, Gradle)
+Calculator SOLID
